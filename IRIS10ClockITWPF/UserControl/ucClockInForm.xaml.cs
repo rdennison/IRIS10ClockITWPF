@@ -1,15 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using Serilog;
+using IRIS10ClockITWPF.Models;
+using IRIS10ClockITWPF.Classes;
 
 namespace IRIS10ClockITWPF.UserControl
 {
@@ -23,9 +18,6 @@ namespace IRIS10ClockITWPF.UserControl
             InitializeComponent();
         }
 
-        private void radDropDownButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+    
     }
 }

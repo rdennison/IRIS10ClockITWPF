@@ -4,6 +4,5 @@
                 xmlns:uc="clr-namespace:IRIS10ClockITWPF.UserControls"
                 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
                 Title="MainWindow" Height="350" Width="525">
-    <telerik:Label x:Name="label" Content="Under Construction Come Back Later!" HorizontalAlignment="Left" Margin="165,70,0,0" VerticalAlignment="Top" Width="225"/>
-
+        <Grid/>
 </Window>

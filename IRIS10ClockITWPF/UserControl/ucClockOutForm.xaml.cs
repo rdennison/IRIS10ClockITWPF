@@ -16,7 +16,7 @@ namespace IRIS10ClockITWPF.UserControl
     /// <summary>
     /// Interaction logic for ucClockOutForm.xaml
     /// </summary>
-    public partial class ucClockOutForm 
+    public partial class ucClockOutForm
     {
         public ucClockOutForm()
         {

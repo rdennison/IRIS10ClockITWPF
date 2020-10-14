@@ -16,5 +16,5 @@ C:\Users\rdenn\source\repos\CRPIRIS\IRIS10ClockITWPF\IRIS10ClockITWPF\App.xaml
 260-860538638
 MainWindow.xaml;UserControl\ucClockInForm.xaml;UserControl\ucClockOutForm.xaml;UserControl\ucLogin.xaml;UserControl\ucRequestTimeOffForm.xaml;UserControl\ucViewHistoryForm.xaml;
 
-False
+True
 
