@@ -1,0 +1,130 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>IRIS10ClockITWPF</RootNamespace>
+    <EnableDefaultItems>False</EnableDefaultItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+    <PackageReference Include="Telerik.UI.for.Wpf.NetCore.Xaml" Version="2020.1.115" />
+  </ItemGroup>
+  
+  <ItemGroup>
+  <ApplicationDefinition Include="App.xaml">
+    <Generator>MSBuild:Compile</Generator>
+    <SubType>Designer</SubType>
+  </ApplicationDefinition>
+  <Page Include="MainWindow.xaml">
+    <Generator>MSBuild:Compile</Generator>
+    <SubType>Designer</SubType>
+  </Page>
+  <Page Include="UserControl\ucClockInForm.xaml">
+    <Generator>MSBuild:Compile</Generator>
+  </Page>
+  <Page Include="UserControl\ucClockOutForm.xaml">
+    <Generator>MSBuild:Compile</Generator>
+  </Page>
+  <Page Include="UserControl\ucLogin.xaml">
+    <Generator>MSBuild:Compile</Generator>
+  </Page>
+  <Page Include="UserControl\ucRequestTimeOffForm.xaml">
+    <Generator>MSBuild:Compile</Generator>
+  </Page>
+  <Page Include="UserControl\ucViewHistoryForm.xaml">
+    <Generator>MSBuild:Compile</Generator>
+  </Page>
+  <Compile Include="App.xaml.cs">
+    <DependentUpon>App.xaml</DependentUpon>
+    <SubType>Code</SubType>
+  </Compile>
+  <Compile Include="Attributes\AddSpecialColumnAttribute.cs" />
+  <Compile Include="Attributes\AggregateAttribute.cs" />
+  <Compile Include="Attributes\AltitudeAttribute.cs" />
+  <Compile Include="Attributes\APIContainerAttribute.cs" />
+  <Compile Include="Attributes\APIForeignRelationAttribute.cs" />
+  <Compile Include="Attributes\APIPrimaryModelAttribute.cs" />
+  <Compile Include="Attributes\ApiSecurityAttribute.cs" />
+  <Compile Include="Attributes\AuditAttribute.cs" />
+  <Compile Include="Attributes\BatchModeAttribute.cs" />
+  <Compile Include="Attributes\CalculatedFieldAttribute.cs" />
+  <Compile Include="Attributes\CantEditAttribute.cs" />
+  <Compile Include="Attributes\CopyDownAttribute.cs" />
+  <Compile Include="Attributes\DBKeyAttribute.cs" />
+  <Compile Include="Attributes\DbPropertiesAttribute.cs" />
+  <Compile Include="Attributes\DisableSqlReadAttribute.cs" />
+  <Compile Include="Attributes\DropdownAttribute.cs" />
+  <Compile Include="Attributes\EditorSectionAttribute.cs" />
+  <Compile Include="Attributes\EditorTypeAttribute.cs" />
+  <Compile Include="Attributes\ExcludeGridConfigAttribute.cs" />
+  <Compile Include="Attributes\FilterTypeAttribute.cs" />
+  <Compile Include="Attributes\ForeignKeyAttribute.cs" />
+  <Compile Include="Attributes\GridSetupAttribute.cs" />
+  <Compile Include="Attributes\HasChildGridAttribute.cs" />
+  <Compile Include="Attributes\HasParentAttribute.cs" />
+  <Compile Include="Attributes\HiddenAttribute.cs" />
+  <Compile Include="Attributes\IrisGridColumnAttribute.cs" />
+  <Compile Include="Attributes\IrisMenuAttribute.cs" />
+  <Compile Include="Attributes\IrisToolbarAttribute.cs" />
+  <Compile Include="Attributes\IrisToolbarIcons.cs" />
+  <Compile Include="Attributes\IsAutoNumberAttribute.cs" />
+  <Compile Include="Attributes\IsExcludeSqlAttribute.cs" />
+  <Compile Include="Attributes\KeyNameAttribute.cs" />
+  <Compile Include="Attributes\LandingMenuAttribute.cs" />
+  <Compile Include="Attributes\LatitudeAttribute.cs" />
+  <Compile Include="Attributes\LongitudeAttribute.cs" />
+  <Compile Include="Attributes\LookupDisplayAttribute.cs" />
+  <Compile Include="Attributes\ModelDataBindingsAttribute.cs" />
+  <Compile Include="Attributes\NoAutoSyncAttribute.cs" />
+  <Compile Include="Attributes\NoTenantAttribute.cs" />
+  <Compile Include="Attributes\OrderByFieldAttribute.cs" />
+  <Compile Include="Attributes\ReportAttribute.cs" />
+  <Compile Include="Attributes\SecurityAttribute.cs" />
+  <Compile Include="Attributes\SiteAttributes.cs" />
+  <Compile Include="Attributes\UserDefinedAttribute.cs" />
+  <Compile Include="Classes\CryptoHelper.cs" />
+  <Compile Include="Classes\ErrorHandler.cs" />
+  <Compile Include="MainWindow.xaml.cs">
+    <DependentUpon>MainWindow.xaml</DependentUpon>
+    <SubType>Code</SubType>
+  </Compile>
+  <Compile Include="Models\ActivityModel.cs" />
+  <Compile Include="Models\Config.cs" />
+  <Compile Include="Models\CustomerModel.cs" />
+  <Compile Include="Models\DropDown.cs" />
+  <Compile Include="Models\EmployeeModel.cs" />
+  <Compile Include="Models\FiscalModel.cs" />
+  <Compile Include="Models\GASB34ClassificationModel.cs" />
+  <Compile Include="Models\IRISUserModel.cs" />
+  <Compile Include="Models\MgtUnit.cs" />
+  <Compile Include="Models\ModelBase.cs" />
+  <Compile Include="Models\OrganizationModel.cs" />
+  <Compile Include="Models\ProgramModel.cs" />
+  <Compile Include="Models\ProjectModel.cs" />
+  <Compile Include="Models\ReasonModel.cs" />
+  <Compile Include="Models\RoadModel.cs" />
+  <Compile Include="Models\SqlBase.cs" />
+  <Compile Include="Models\TenantModel.cs" />
+  <Compile Include="Models\TimeClockModel.cs" />
+  <Compile Include="Models\UOMModel.cs" />
+  <Compile Include="Models\WorkCompModel.cs" />
+  <Compile Include="Models\Zone.cs" />
+  <Compile Include="UserControl\ucClockInForm.xaml.cs" />
+  <Compile Include="UserControl\ucClockOutForm.xaml.cs" />
+  <Compile Include="UserControl\ucLogin.xaml.cs" />
+  <Compile Include="UserControl\ucRequestTimeOffForm.xaml.cs" />
+  <Compile Include="UserControl\ucViewHistoryForm.xaml.cs" />
+</ItemGroup>
+  
+  <ItemGroup>
+    <Content Include="IRISLogo.png" />
+    <Content Include="Resources\IRISLogo.png" />
+  </ItemGroup>
+
+</Project>
